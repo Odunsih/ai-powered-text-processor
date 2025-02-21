@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AI Text Processor",
+  "version": "1.0",
+  "description": "AI-powered text processing and translation extension",
+  "permissions": [
+    "translate",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "favicon.ico",
+    "48": "favicon.ico",
+    "128": "favicon.ico"
+  }
+}

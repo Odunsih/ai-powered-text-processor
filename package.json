@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:extension": "next build && mkdir -p dist && cp -r public/* dist/ && cp -r .next/* dist/"
+    "build:extension": "next build && if not exist dist mkdir dist && xcopy /s /y public\\* dist\\ && xcopy /s /y .next\\* dist\\ && if not exist dist\\icons mkdir dist\\icons"
   },
   "dependencies": {
     "react": "^19.0.0",
